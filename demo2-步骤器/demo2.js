@@ -2,6 +2,7 @@ const progress=document.getElementById('progress');
 const prev=document.getElementById('prev')
 const next=document.getElementById('next')
 const circles=document.querySelectorAll(".circle")
+// 存储当前步骤
 let currentActive=1;
 next.addEventListener('click',()=>{
     currentActive++;
