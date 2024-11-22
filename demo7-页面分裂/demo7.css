@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+.box1{
+    flex:2.5;
+    background-image: url(./66.jpg);
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.box2{
+    flex:2.5;
+    background-image: url(./java.png);
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
