@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+.bg{
+    background: url(./66.jpg)
+    no-repeat center center/cover;
+    position: absolute;
+    /* top:-30px;
+    left:-30px; */
+    width: calc((100vw ));
+    height: calc(100vh );
+    z-index: -1;
+    /* 滤镜 */
+    filter: blur(0px);
+}
+.loading-text{
+    font-size: 50px;
+}
