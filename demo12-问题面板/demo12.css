@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+h1{
+    margin: 10px 0 10px;
+    text-align: center;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+}
+.feq{
+    background-color:gray;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding:30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.active{
+    background:white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1),0 3px 6px rgba(0,0,0,0.1);
+
+}
+.active::before,
+.active::after{
+    content:'\f075';
+    font-family: 'Font Awesome 5 free';
+    color:#2ecc71;
+    font-size:7rem;
+    position: absolute;
+    opacity: 0.2;
+    top:20px;
+    left:20px;
+    z-index: 0;
+}
+.active::before{
+    color:#3498db;
+    top:-10px;
+    left:-30px;
+    transform: rotateY('180');
+}
+.faq-titile{
+    margin:0 35px 0 0;
+}
+.faq-text{
+    display: none;
+    margin: 30px 0 0;
+}
+.active .faq-text{
+    display: block;
+}
+.btn{
+    background-color: transparent;
+    border:0;
+    border-radius: 50;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    top:30px;
+    right:30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn:focus{
+    outline: none;
+}
+.btn guanbi{
+    display: none;
+}
+.active .btn guanbi{
+    color: white;
+    display: block;
+}
+.active .btn{
+    background-color: #9fa4a8;
+}
+.active .btn xiala{
+    display: none;
+}
